@@ -1,0 +1,8 @@
+Prefetcher,IPC,L1D_HitRatio,L2C_HitRatio,LLC_HitRatio
+next_line,0.664761,93.1382,33.8629,0.0
+ppf_next_line_5,0.313249,93.0634,11.149,0.0
+ip_stride,0.312651,93.0634,27.5174,0.0
+ppf_ip_stride,0.313249,93.0634,1.1392,0.0
+ppf_spp_dev_3,0.960137,93.0665,52.7795,50.5445
+temporal_region_prefeching_baseline,0.960137,93.0665,52.7795,50.5445
+temporal_region_prefeching_baseline_ppf_advanced_modular_2,0.635664,93.0989,61.9364,0.0

@@ -1,0 +1,2 @@
+Started running file 600.perlbench_s-210B.champsimtrace.xz at time Sun Apr 13 10:37:55 PM IST 2025 with prefetcher 
+***************** Done with 600.perlbench_s-210B.champsimtrace.xz using , on Sun Apr 13 10:37:55 PM IST 2025 ******************

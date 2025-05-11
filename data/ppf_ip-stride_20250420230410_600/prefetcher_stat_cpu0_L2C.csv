@@ -1,0 +1,3 @@
+index, total_training, useful_training, total_prediction, true_prediction, total_prefetch, useful_prefetch, cache_operate, cache_hit
+0, 0, 0, 0, 0, 0, 0, 0, 0
+
