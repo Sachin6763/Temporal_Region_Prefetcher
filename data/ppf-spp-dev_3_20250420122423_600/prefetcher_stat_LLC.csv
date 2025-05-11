@@ -1,6 +1,0 @@
-index, total_training, useful_training, total_prediction, true_prediction, total_prefetch, useful_prefetch, cache_operate, cache_hit, cycle_operate, success_pref, prefetch_accuracy, extra_var_1
-0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0
-1, 97, 97, 167, 167, 16, 11, 430, 44, 100001, 135, 0, 0
-2, 231, 231, 438, 438, 209, 50, 609, 79, 200001, 328, 0, 0
-3, 715, 715, 1329, 1329, 864, 167, 1361, 182, 300001, 983, 0, 0
-
