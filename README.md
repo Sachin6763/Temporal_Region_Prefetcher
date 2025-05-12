@@ -113,6 +113,7 @@ To be added
 
 ## 🧠 Authors
 
-- **Shreyash Thok**  
-- **Sachin Sugadare**
-- **Jishan Pathan**  
+
+- [**Shreyash Thok**](https://github.com/ShreyashThok24731)  
+- [**Sachin Sugadare**](https://github.com/Sachin6763)  
+- [**Jishan Pathan**](https://github.com/Jishan5707) 
