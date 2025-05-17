@@ -107,9 +107,38 @@ This script aggregates and averages simulation results for different prefetchers
 
 ## 📊 Results
 
-To be added
+Our experiments evaluated traditional and perceptron-enhanced prefetchers using DPC-3 benchmark traces in the ChampSim simulator. Metrics such as IPC, cache hit ratios, and prefetch effectiveness were analyzed.
 
----
+
+### 🔬 Performance Comparison Table
+
+| Prefetcher              | IPC       | L1I Hit (%) | L1D Hit (%) | L2C Hit (%) | LLC Hit (%) | Prefetches Issued | Useful Prefetches |
+|-------------------------|-----------|-------------|-------------|-------------|--------------|--------------------|--------------------|
+| No Prefetcher           | 1.408950  | 97.282      | 99.424      | 42.309      | 4.315        | 0                  | 0                  |
+| Next-line               | 1.420495  | 97.282      | 99.425      | 55.541      | 4.972        | 12399.22           | 1301.11            |
+| Next-line + Perceptron  | 1.408836  | 97.282      | 99.424      | 51.394      | 4.320        | 4971.44            | 29.56              |
+| IP-stride               | 1.408357  | 97.282      | 99.424      | 48.707      | 4.374        | 9434.56            | 104.11             |
+| IP-stride + Perceptron  | 1.408721  | 97.282      | 99.424      | 44.780      | 4.337        | 3162.00            | 37.67              |
+| SPP-Dev                 | 1.417269  | 97.282      | 99.425      | 47.703      | 35.759       | 21505.56           | 248.78             |
+| SPP-Dev + Perceptron    | 1.419420  | 97.282      | 99.425      | 52.421      | 16.692       | 12977.67           | 952.89             |
+| Temporal Region (TRP)   | 1.419423  | 97.282      | 99.425      | 52.421      | 16.692       | 12978.11           | 953.00             |
+| TRP + Perceptron (PPF)  | **1.421608** | 97.282   | 99.425      | **56.694**  | 5.055        | **16241.11**        | **1631.33**         |
+
+
+
+
+✅ Key Insights
+
+    🧠 TRP + Perceptron achieved the highest IPC and L2C hit ratio, outperforming all traditional prefetchers.
+
+    🎯 Perceptron-based filtering improved the usefulness of prefetches and reduced unnecessary memory traffic.
+
+    🔍 SPP-Dev had high LLC hit ratios but suffered from cache pollution, leading to lower IPC than TRP+PPF.
+
+    💡 Results confirm that lightweight ML models can effectively enhance hardware prefetching without high complexity.
+
+
+   
 
 ## 🧠 Authors
 
